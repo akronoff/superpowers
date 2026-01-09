@@ -25,21 +25,26 @@ Based on [Superpowers](https://github.com/obra/superpowers) by Jesse Vincent. If
 
 ## Installation
 
-### As a local plugin
+This plugin requires a marketplace to install. Use the companion marketplace repo.
+
+### Step 1: Add the marketplace
 
 ```bash
-# Clone this repo
-git clone https://github.com/akronoff/superpowers.git ~/.claude/plugins/local/superpowers
-
-# Enable in Claude Code
-/plugin enable superpowers@local
+/plugin marketplace add akronoff/superpowers-marketplace
 ```
 
-### From your fork
+### Step 2: Install the plugin
 
 ```bash
-/plugin marketplace add akronoff/superpowers
-/plugin install superpowers@akronoff-superpowers
+/plugin install superpowers@superpowers-marketplace
+```
+
+### Updating
+
+To get the latest changes:
+
+```bash
+/plugin update superpowers@superpowers-marketplace
 ```
 
 ## The Basic Workflow
